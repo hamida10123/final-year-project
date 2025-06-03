@@ -1,0 +1,114 @@
+
+  .packages {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 cards in the first row */
+    gap: 20px;
+    max-width: 1000px; 
+    margin: 0 auto;
+  }
+  
+ 
+  .package-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Ensuring Images are the Same Size */
+  .package-card img {
+    width: 100%;
+    border-radius: 10px;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  
+  .book-now {
+    background-color: #001399;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .book-now:hover {
+    background-color: #001399;
+  }
+
+
+/* For Large Tablets and Small Desktops (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .packages {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 800px;
+    padding: 0 20px;
+  }
+
+  .package-card {
+    width: 100%;
+  }
+}
+
+/* For Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  .packages {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 600px;
+    gap: 15px;
+  }
+
+  .package-card {
+    padding: 15px;
+  }
+
+  .package-card img {
+    height: 160px;
+  }
+
+  .book-now {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
+/* For Small Tablets (max-width: 600px) */
+@media (max-width: 600px) {
+  .packages {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+  }
+}
+
+/* For Mobile Devices in Landscape (max-width: 480px) */
+@media (max-width: 480px) and (orientation: landscape) {
+  .packages {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 10px;
+  }
+
+  .package-card img {
+    height: 120px;
+  }
+}
+
+/* For Small Mobile Devices (max-width: 320px) */
+@media (max-width: 320px) {
+  .package-card {
+    padding: 10px;
+  }
+
+  .package-card img {
+    height: 130px;
+  }
+
+  .book-now {
+    padding: 6px 14px;
+    font-size: 11px;
+  }
+}

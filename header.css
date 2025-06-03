@@ -1,0 +1,1380 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+  }
+  
+  .loop {
+    position: relative;
+    overflow: hidden;
+    height: 400px;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                      url('http://localhost/fyp/uploads/loop.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.blue {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 5px;
+    background-color: #001399;
+    color: white;
+    flex-wrap: wrap;
+  }
+  
+  .blue .social-icons a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  
+  .blue .menu {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .blue .menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    margin-left: 15px;
+  }
+  
+  .navbar-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: transparent;
+    margin-top: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .logo {
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    margin-right: 30px;
+  }
+  
+  .navbar-2 .menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    margin: 0 10px;
+  }
+  
+  .navbar-2 .bookingon {
+    background-color: #001399;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  .more-pages-dropdown {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+  }
+  
+  .more-pages-menu {
+    display: none;
+    position: absolute;
+    background-color: #001399;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    top: 30px;
+    left: 0;
+  }
+  
+  .more-pages-dropdown:hover .more-pages-menu {
+    display: block;
+  }
+  
+  .more-pages-menu a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .more-pages-menu a:hover {
+    background-color: #ddd;
+  }
+  
+  .hope {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 2;
+  }
+  
+  .hope h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .hope p {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .hope .btn {
+    background-color: #001399;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  
+  .outer-btn {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #001399;
+    color: white;
+    border: transparent;
+    border-radius: 50px;
+    font-size: 18px;
+    width: 100%;
+    max-width: 1000px;
+    text-align: center;
+    overflow: hidden;
+    flex-wrap: wrap;
+  }
+  
+  .thailand-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 24px;
+    background-color: white;
+    color: #001399;
+    border: transparent;
+    border-radius: 100px;
+    font-size: 18px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .search-bar {
+    padding: 12px 20px;
+    border-radius: 25px;
+    width: 200px;
+    font-size: 16px;
+    margin-right: 10px;
+    border: none;
+  }
+  
+  .hope {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 2;
+  }
+  
+  .Our{
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .hope p {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  
+  .search-btn {
+    padding: 10px 20px;
+    background-color: #001399;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: none;
+  }
+  
+  .thailand-btn:hover,
+  .search-btn:hover {
+    background-color: white;
+    color: white;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #001399;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  /* ✅ Responsive CSS */
+  
+  @media (max-width: 768px) {
+    .loop {
+      height: 60vh;
+    }
+  
+    .blue, .navbar-2 {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .blue .menu a,
+    .navbar-2 .menu a {
+      margin: 8px 0;
+    }
+  
+    .logo {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+  
+    .navbar-2 .bookingon {
+      font-size: 16px;
+      padding: 6px 15px;
+    }
+  
+    .hope h1 {
+      font-size: 24px;
+    }
+  
+    .hope p {
+      font-size: 16px;
+    }
+  
+    .hope .btn {
+      font-size: 14px;
+      padding: 10px 20px;
+    }
+  
+    .outer-btn {
+      flex-direction: column;
+      padding: 10px;
+    }
+  
+    .thailand-btn {
+      flex-direction: column;
+      width: 90%;
+      font-size: 16px;
+    }
+  
+    .search-bar {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    .search-btn {
+      width: 100%;
+    }
+  
+    .more-pages-menu, .dropdown-content {
+      min-width: 100%;
+      left: 0;
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .logo {
+      font-size: 40px;
+    }
+  
+    .hope h1 {
+      font-size: 30px;
+    }
+  
+    .hope p {
+      font-size: 18px;
+    }
+  
+    .navbar-2 .menu a {
+      font-size: 16px;
+      margin: 0 5px;
+    }
+  
+    .outer-btn {
+      max-width: 90%;
+    }
+  }
+  .thailand-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 24px;
+    background-color: white;
+    color: #001399;
+    border: transparent;
+    border-radius: 100px;
+    font-size: 18px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .search-bar {
+    padding: 12px 20px;
+    border-radius: 25px;
+    width: 200px;
+    font-size: 16px;
+    margin-right: 10px;
+    border: none;
+  }
+  
+  .hope {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 2;
+  }
+  
+  .Our{
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .hope p {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  
+  .search-btn {
+    padding: 10px 20px;
+    background-color: #001399;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: none;
+  }
+  
+  .thailand-btn:hover,
+  .search-btn:hover {
+    background-color: white;
+    color: white;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #001399;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  /* ✅ Responsive CSS */
+  
+  @media (max-width: 768px) {
+    .loop {
+      height: 60vh;
+    }
+  
+    .blue, .navbar-2 {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .blue .menu a,
+    .navbar-2 .menu a {
+      margin: 8px 0;
+    }
+  
+    .logo {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+  
+    .navbar-2 .bookingon {
+      font-size: 16px;
+      padding: 6px 15px;
+    }
+  
+    .hope h1 {
+      font-size: 24px;
+    }
+  
+    .hope p {
+      font-size: 16px;
+    }
+  
+    .hope .btn {
+      font-size: 14px;
+      padding: 10px 20px;
+    }
+  
+    .outer-btn {
+      flex-direction: column;
+      padding: 10px;
+    }
+  
+    .thailand-btn {
+      flex-direction: column;
+      width: 90%;
+      font-size: 16px;
+    }
+  
+    .search-bar {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    .search-btn {
+      width: 100%;
+    }
+  
+    .more-pages-menu, .dropdown-content {
+      min-width: 100%;
+      left: 0;
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .logo {
+      font-size: 40px;
+    }
+  
+    .hope h1 {
+      font-size: 30px;
+    }
+  
+    .hope p {
+      font-size: 18px;
+    }
+  
+    .navbar-2 .menu a {
+      font-size: 16px;
+      margin: 0 5px;
+    }
+  
+    .outer-btn {
+      max-width: 90%;
+    }
+  }
+   .about-us {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin-top: 400px;
+    flex-wrap: wrap;
+}
+
+.about-image {
+    flex: 1;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-image img {
+    width: 80%;
+    border-radius: 10px;
+}
+
+.about-text {
+    flex: 2;
+    padding: 20px;
+}
+
+.h22 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+.about-text p {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.about-text ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about-text ul li {
+    margin-bottom: 5px;
+    font-size: 1em;
+    color: #333;
+}
+
+.read-more {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #001399;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    place-items: center;
+}
+
+.read-more:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .about-us {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image img {
+        width: 100%;
+    }
+
+    .about-text {
+        flex: 1;
+        padding: 15px;
+    }
+
+    .h22 {
+        font-size: 1.8em;
+    }
+
+    .about-text ul li {
+        font-size: 0.9em;
+    }
+
+    .read-more {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .h22 {
+        font-size: 1.6em;
+    }
+
+    .about-text p {
+        font-size: 0.9em;
+    }
+
+    .read-more {
+        font-size: 0.9em;
+    }
+}
+.why-choose {
+    background: #eef3ff;
+    padding: 60px 30px;
+    text-align: center;
+  }
+  .founder-message {
+    background-color: #f4f4f4;
+    padding: 30px;
+    text-align: center;
+    margin: 20px auto;
+    border-radius: 8px;
+  }
+  
+  .founder-message h2 {
+    font-size: 28px;
+    color: #001399;
+  }
+  
+  .founder-message p {
+    font-size: 18px;
+    color: #555;
+  }
+  
+  .why-choose h2 {
+    font-size: 34px;
+    color: #001399;
+    margin-bottom: 40px;
+    font-weight: bold;
+  }
+  
+  .features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+  }
+  
+  .feature-box {
+    background: white;
+    border-radius: 15px;
+    padding: 30px 20px;
+    width: 240px;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .feature-box:hover {
+    transform: translateY(-10px);
+  }
+  
+  .feature-box i {
+    font-size: 40px;
+    color: #001399;
+    margin-bottom: 15px;
+  }
+  
+  .feature-box h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #001399;
+  }
+  
+  .feature-box p {
+    font-size: 14px;
+    color: #444;
+  }
+  /* Footer Section */
+.ft {
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+
+/* Footer Background */
+.ftbg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 102, 255, 0.5); 
+    z-index: 1;
+}
+
+/* Background Image */
+.bgig {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+/* Text Content */
+.text-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    font-size: 36px;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+/* Text for Header */
+.text-content p:first-child {
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.hnng {
+    font-size: 24px;
+    margin-top: 0px;
+}
+
+.text-content p:last-child {
+    font-size: 24px;
+    margin-top: 0px;
+}
+
+/* Subscribe Button */
+.subscribe-button {
+    background-color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Subscribe Input */
+.subscribe-button input {
+    border: none;
+    padding: 4px;
+    font-size: 16px;
+    width: 500px;
+    border-radius: 0%;
+    border: none;
+}
+
+/* Subscribe Button */
+.subscribe-button button {
+    background-color: #001399;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Footer Section Styling */
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 50px 100px; 
+}
+
+/* Footer Layout */
+.ftt {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap; 
+    
+}
+
+/* Footer Columns */
+.ft1, .ft2, .ft3, .ft4 {
+    width: 23%;
+    padding: 20px;
+    text-align: left;
+}
+
+/* Footer Lists */
+.ft2 ul, .ft3 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.ft2 ul li, .ft3 ul li {
+    padding: 10px 0;
+}
+
+.ft2 ul li a, .ft3 ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.ft2 ul li::before, .ft3 ul li::before {
+    content: ">";
+    font-size: 18px;
+    margin-right: 10px;
+    color: #fff;
+}
+
+/* Footer Last Column */
+.ft4 {
+    width: 15%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Language & Converter Button Styling */
+
+.language-button {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 15px 30px; 
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px; 
+    margin-bottom: 20px; 
+    }
+    
+    .converter-button {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    }
+    .language-button,
+    .converter-button {
+      background-color: #fff;
+      color: #000;
+      border: none;
+      padding: 15px 30px; 
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 18px; 
+    }
+    
+    
+  
+  .language-button::after,
+  .converter-button::after {
+    content: "\25BC";
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #000;
+  }
+  
+/* Social Media Icons */
+.socials {
+    margin-top: 15px;
+}
+
+.socials img, .socials i {
+    margin-right: 15px;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.social-icons i {
+    font-size: 24px;
+}
+
+/* Copyright Notice */
+.copyright-notice {
+    font-size: 14px;
+    color: #fff;
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+    clear: both;
+    margin-top: 20px;
+}
+
+/* Responsive Adjustments */
+
+/* For medium screens (tablets) */
+@media (max-width: 768px) {
+    .ft1, .ft2, .ft3, .ft4 {
+        width: 45%; /* Columns take up 45% of the space on tablets */
+        margin-bottom: 20px;
+    }
+
+    .text-content {
+        font-size: 28px; /* Decrease text size */
+        padding: 15px; /* Reduce padding */
+    }
+
+    .subscribe-button input {
+        width: 350px; /* Adjust width for smaller screens */
+    }
+
+    footer {
+        padding: 40px 50px; /* Less padding for medium screens */
+    }
+}
+
+/* For small screens (mobiles) */
+@media (max-width: 480px) {
+    .ft1, .ft2, .ft3, .ft4 {
+        width: 100%; /* Full width on mobile */
+        margin-bottom: 20px;
+    }
+
+    .text-content {
+        font-size: 20px; /* Further decrease font size */
+        padding: 10px;
+    }
+
+    .subscribe-button input {
+        width: 80%; /* Take up most of the screen width */
+    }
+
+    footer {
+        padding: 30px 20px; /* Even less padding for mobile */
+    }
+
+    .socials img, .socials i {
+        font-size: 20px; /* Smaller icons on mobile */
+    }
+}
+
+
+
+.service-con {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.line {
+  display: inline-block;
+  width: 10%;
+  height: 2px;
+  background-color: #001399;
+  margin: 10px 10px 10px 10px;
+}
+
+.services {
+  display: inline-block;
+  font-size: 24px;
+  color: #001399;
+  margin: 0 10px;
+}
+
+.service.clicked {
+  background-color: #001399;
+  color: black;
+}
+
+.query-text {
+  margin-top: 10px;
+  font-size: 16px;
+  color: black;
+  font-weight: bold;
+}
+
+.service-heading {
+  font-size: 50px;
+  color: #001399;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.sub-heading {
+  text-align: center;
+  font-size: 25px;
+  color: #777;
+  margin-bottom: 40px;
+}
+
+.services-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 20px;
+  text-align: center;
+  flex-wrap: wrap; /* Ensures the services stack on smaller screens */
+}
+
+.service {
+  background-color: white;
+  padding: 20px;
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  margin: 15px;
+}
+
+.service:hover,
+.service.clicked {
+  transform: translateY(-10px);
+}
+
+.service i {
+  font-size: 40px;
+  color: #001399;
+}
+
+.service h3 {
+  font-size: 22px;
+  color: black;
+  margin: 15px 0;
+  text-transform: capitalize;
+}
+
+.service p {
+  font-size: 14px;
+  color: #555;
+}
+
+.service img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.read-more {
+  display: block;
+  width: 200px;
+  margin: 30px 0;
+  text-align: center;
+  padding: 13px 30px;
+  background-color: #001399;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  float: left;
+}
+
+.read-more:hover {
+  background-color: #001399;
+  cursor: pointer;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .services-container {
+      justify-content: center; /* Center the services */
+  }
+
+  .service {
+      width: 100%;
+      max-width: 300px; /* Restrict max width */
+      margin: 15px 0; /* Adjust margins */
+  }
+
+  .service-heading {
+      font-size: 2.5em; /* Adjust font size */
+  }
+
+  .sub-heading {
+      font-size: 1.8em;
+  }
+
+  .read-more {
+      width: 100%;
+      text-align: center;
+  }
+}
+
+/* Even smaller screens (mobile) */
+@media (max-width: 480px) {
+  .service-heading {
+      font-size: 2em;
+  }
+
+  .sub-heading {
+      font-size: 1.6em;
+  }
+
+  .service i {
+      font-size: 30px; /* Adjust icon size for mobile */
+  }
+
+  .service h3 {
+      font-size: 18px; /* Adjust heading font size */
+  }
+
+  .service p {
+      font-size: 12px; /* Adjust paragraph font size */
+  }
+
+  .read-more {
+      font-size: 14px; /* Adjust read more button font size */
+  }
+}
+.guide-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+  
+  .guide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  width: 30%;
+  }
+  .guide-picture {
+    width: 300px;
+    height: 250px;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    .guide-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+    .line {
+      display: inline-block;
+      width: 10%;
+      height: 2px;
+      background-color: #001399;
+      margin: 10px 10px 10px 10px;
+    }
+     
+.service-con {
+text-align: center;
+margin-top: 50px;
+}
+    .services{
+      display: inline-block;
+      font-size: 24px;
+      color: #001399;
+      margin: 0 10px;
+    }
+    .service.clicked {
+      background-color: #001399;
+      color: black; 
+    }
+    
+    .query-text {
+      margin-top: 10px;
+      font-size: 16px;
+      color: black;
+      font-weight: bold;
+    }
+    
+  .guide-info {
+  text-align: center;
+  margin-top: 10px;
+  }
+  .guide {
+    cursor: pointer;
+    }
+    
+    .guide:active {
+    background-color: #001399;
+    color: #fff;
+    }
+   
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  /* For tablets and medium screens, adjust guide items */
+  .guide {
+      width: 45%; /* Each guide takes 45% of the container, so 2 per row */
+  }
+}
+
+@media (max-width: 480px) {
+  /* For small screens (mobiles), stack the guides vertically */
+  .guide {
+      width: 100%; /* Guides will take up the full width */
+  }
+
+  /* Adjust image size on small screens */
+  .guide-picture {
+      width: 100%;
+      height: 200px; /* Smaller images for mobile */
+  }
+}
+ 
+.gally {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.imagerrr {
+  margin: 10px;
+  width: calc(33.33% - 20px);
+  transition: transform 0.5s;
+}
+
+.imagerrr img {
+  width: 100%; /* Use full width for images to make them responsive */
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Filter buttons container */
+.filter-buttons {
+  margin: 20px;
+  text-align: center; /* Center the filter buttons */
+}
+
+.filter-buttons .filter-btn {
+  background-color: white;
+  color: #001399;
+  border: 2px solid black;
+  padding: 10px 25px;
+  margin: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: 0.3s;
+  margin-left: 60px; /* Adjust margin */
+}
+
+.filter-buttons .filter-btn:active, 
+.filter-buttons .filter-btn.selected {
+  background-color: #001399;
+  color: white;
+  border: 2px solid black;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  /* For smaller screens, adjust gallery images */
+  .imagerrr {
+      width: calc(50% - 20px); /* Images take up half of the container */
+  }
+  
+  /* Adjust the filter button margin and width */
+  .filter-buttons .filter-btn {
+      margin-left: 10px; /* Reduce left margin */
+      padding: 8px 20px; /* Reduce padding */
+  }
+}
+
+@media (max-width: 480px) {
+  /* For very small screens, adjust gallery images to full width */
+  .imagerrr {
+      width: calc(100% - 20px); /* Images take up full width */
+  }
+
+  /* Adjust filter button text and layout */
+  .filter-buttons .filter-btn {
+      font-size: 14px; /* Smaller font size */
+      padding: 8px 15px; /* Reduce padding */
+      margin-left: 5px; /* Adjust margin */
+  }
+}/* Main guide container */
+.guide-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap; /* Keeps items in a single row unless specified otherwise in the media queries */
+}
+
+/* Guide item styles */
+.guide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  width: 30%; /* Each guide takes up 30% of the container */
+}
+
+/* Guide image container */
+.guide-picture {
+  width: 300px;
+  height: 250px;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Image styling */
+.guide-picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Line styling for separation */
+.line {
+  display: inline-block;
+  width: 10%;
+  height: 2px;
+  background-color: #001399;
+  margin: 10px 10px 10px 10px;
+}
+
+/* Service container */
+.service-con {
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* Service text styling */
+.services {
+  display: inline-block;
+  font-size: 24px;
+  color: #001399;
+  margin: 0 10px;
+}
+
+/* Service item click styling */
+.service.clicked {
+  background-color: #001399;
+  color: black;
+}
+
+/* Query text styling */
+.query-text {
+  margin-top: 10px;
+  font-size: 16px;
+  color: black;
+  font-weight: bold;
+}
+
+
+        
+  

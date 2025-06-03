@@ -1,0 +1,74 @@
+
+
+  .packages {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 cards in the first row */
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.package-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+}
+
+.package-card img {
+    width: 100%;
+    border-radius: 10px;
+    height: 180px;
+    object-fit: cover;
+}
+
+.book-now {
+    background-color: #001399;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.book-now:hover {
+    background-color: #001399;
+}
+
+/* ---------- Responsive Media Queries ---------- */
+
+@media (max-width: 768px) {
+    .packages {
+        grid-template-columns: repeat(2, 1fr); /* 2 cards per row for tablets */
+    }
+
+    .package-card {
+        width: 100%; /* Make cards full-width in smaller screens */
+        padding: 15px;
+    }
+
+    .book-now {
+        padding: 10px 20px; /* Slightly smaller button */
+        font-size: 14px; /* Slightly smaller text */
+    }
+}
+
+@media (max-width: 480px) {
+    .packages {
+        grid-template-columns: 1fr; /* 1 card per row for mobile devices */
+    }
+
+    .package-card {
+        width: 100%; /* Make cards full-width */
+        padding: 10px;
+    }
+
+    .book-now {
+        padding: 8px 16px; /* Smaller button on mobile */
+        font-size: 14px; /* Smaller font size */
+    }
+}

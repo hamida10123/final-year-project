@@ -1,0 +1,379 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+  }
+  
+  .loop {
+    position: relative;
+    overflow: hidden;
+    height: 90vh;
+    background: url('https://i.ibb.co/6Kzz6rD/loop.png') no-repeat center center/cover;
+    animation: slide 15s infinite;
+    width: 100%;
+  }
+  
+  @keyframes slide {
+    0% { background: url('https://i.ibb.co/6Kzz6rD/loop.png') no-repeat center center/cover; }
+    33% { background: url('https://i.ibb.co/Kjg58HDx/mount-3.jpg') no-repeat center center/cover; }
+    66% { background: url('https://i.ibb.co/7T0BCv4/mount-6.jpg') no-repeat center center/cover; }
+    100% { background: url('https://i.ibb.co/TMZwg9NB/mount-4.jpg') no-repeat center center/cover; }
+  }
+  
+  
+  .blue {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 5px;
+    background-color: #001399;
+    color: white;
+    flex-wrap: wrap;
+  }
+  
+  .blue .social-icons a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  
+  .blue .menu {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .blue .menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    margin-left: 15px;
+  }
+  
+  .navbar-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: transparent;
+    margin-top: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .logo {
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    margin-right: 30px;
+  }
+  
+  .navbar-2 .menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    margin: 0 10px;
+  }
+  
+  .navbar-2 .bookingon {
+    background-color: #001399;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  .more-pages-dropdown {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+  }
+  
+  .more-pages-menu {
+    display: none;
+    position: absolute;
+    background-color: #001399;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    top: 30px;
+    left: 0;
+  }
+  
+  .more-pages-dropdown:hover .more-pages-menu {
+    display: block;
+  }
+  
+  .more-pages-menu a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .more-pages-menu a:hover {
+    background-color: #ddd;
+  }
+  
+  .hope {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 2;
+  }
+  
+  .hope h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .hope p {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .hope .btn {
+    background-color: #001399;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  
+  .outer-btn {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #001399;
+    color: white;
+    border: transparent;
+    border-radius: 50px;
+    font-size: 18px;
+    width: 100%;
+    max-width: 1000px;
+    text-align: center;
+    overflow: hidden;
+    flex-wrap: wrap;
+  }
+  .tour-search-form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 50px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 2000px;
+  margin: auto;
+  width:1400px;
+}
+
+.search-input,
+.filter-select,
+.search-button {
+  border: none;
+  outline: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 30px;
+}
+
+.search-input {
+  flex: 1;
+}
+
+.filter-select {
+  background-color: #f0f0f0;
+}
+
+.search-button {
+  background-color: #001399;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.search-button:hover {
+  background-color: #000d99;
+}
+
+  .thailand-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 24px;
+    background-color: white;
+    color: #001399;
+    border: transparent;
+    border-radius: 100px;
+    font-size: 18px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .search-bar {
+    padding: 12px 20px;
+    border-radius: 25px;
+    width: 400px;
+    font-size: 16px;
+    margin-right: 10px;
+    border: none;
+  }
+
+
+  
+  .search-btn {
+    padding: 10px 20px;
+    background-color: #001399;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: none;
+  }
+  
+  .thailand-btn:hover,
+  .search-btn:hover {
+    background-color: white;
+    color: white;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #001399;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  /* ✅ Responsive CSS */
+  
+  @media (max-width: 768px) {
+    .loop {
+      height: 60vh;
+    }
+  
+    .blue, .navbar-2 {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .blue .menu a,
+    .navbar-2 .menu a {
+      margin: 8px 0;
+    }
+  
+    .logo {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+  
+    .navbar-2 .bookingon {
+      font-size: 16px;
+      padding: 6px 15px;
+    }
+  
+    .hope h1 {
+      font-size: 24px;
+    }
+  
+    .hope p {
+      font-size: 16px;
+    }
+  
+    .hope .btn {
+      font-size: 14px;
+      padding: 10px 20px;
+    }
+  
+    .outer-btn {
+      flex-direction: column;
+      padding: 10px;
+    }
+  
+    .thailand-btn {
+      flex-direction: column;
+      width: 90%;
+      font-size: 16px;
+    }
+  
+    .search-bar {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    .search-btn {
+      width: 100%;
+    }
+  
+    .more-pages-menu, .dropdown-content {
+      min-width: 100%;
+      left: 0;
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .logo {
+      font-size: 40px;
+    }
+  
+    .hope h1 {
+      font-size: 30px;
+    }
+  
+    .hope p {
+      font-size: 18px;
+    }
+  
+    .navbar-2 .menu a {
+      font-size: 16px;
+      margin: 0 5px;
+    }
+  
+    .outer-btn {
+      max-width: 90%;
+    }
+  }

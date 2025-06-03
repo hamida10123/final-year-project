@@ -1,0 +1,248 @@
+
+  .packages {
+    text-align: center;
+    margin-top: 100px;
+  }
+  
+  .line {
+    display: inline-block;
+    width: 10%;
+    height: 2px;
+    background-color: #001399;
+    margin: 10px 10px 10px 10px;
+  }
+  
+  .pak {
+    display: inline-block;
+    font-size: 24px;
+    color: #001399;
+    margin: 0 10px;
+  }
+  
+  .explore {
+    margin-top: 10px;
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 50px;
+  }
+  
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .imager {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  .imager img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .imager:hover img {
+    transform: scale(1.1);
+  }
+  
+  .hover-text {
+    position: absolute;
+    bottom: 10px;
+    transform: translateX(-50%);
+    text-align: left;
+    background: transparent;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    opacity: 1; 
+    line-height: 1;
+    margin-left: 100px;
+  }
+  
+  .hover-text p {
+    margin: 0;
+    padding: 0;
+    display: block; 
+  }
+  
+  /* Header and buttons */
+  .header {
+    color: #001399;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 20px 0;
+  }
+  
+  .buttons {
+    margin: 20px;
+  }
+  
+  .buttons button {
+    background-color: white;
+    color: #001399;
+    border: 2px solid black;
+    padding: 10px 25px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: 0.3s;
+  }
+  
+  .buttons button:active, 
+  .buttons button.selected {
+    background-color: #001399;
+    color: white;
+    border: 2px solid black;
+  }
+  /* ...existing code... */
+
+/* Large Devices (Desktop) */
+@media (min-width: 1200px) {
+  .image-grid {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1000px;
+    gap: 20px;
+  }
+
+  .imager img {
+    height: 300px;
+  }
+}
+
+/* Medium Devices (Laptops) */
+@media (max-width: 1199px) {
+  .image-grid {
+    max-width: 800px;
+    gap: 15px;
+  }
+
+  .imager img {
+    height: 250px;
+  }
+
+  .pak {
+    font-size: 22px;
+  }
+
+  .line {
+    width: 8%;
+  }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  .packages {
+    margin-top: 60px;
+  }
+
+  .image-grid {
+    grid-template-columns: 1fr;
+    max-width: 90%;
+    gap: 15px;
+  }
+
+  .imager img {
+    height: 220px;
+  }
+
+  .hover-text {
+    margin-left: 50%;
+    font-size: 14px;
+  }
+
+  .buttons {
+    margin: 15px;
+  }
+
+  .buttons button {
+    padding: 8px 20px;
+    font-size: 14px;
+    margin: 4px;
+  }
+}
+
+/* Small Tablets */
+@media (max-width: 600px) {
+  .line {
+    width: 15%;
+  }
+
+  .imager img {
+    height: 200px;
+  }
+
+  .header {
+    font-size: 20px;
+    margin: 15px 0;
+  }
+}
+
+/* Mobile Landscape */
+@media (max-width: 480px) {
+  .packages {
+    margin-top: 40px;
+  }
+
+  .line {
+    width: 20%;
+  }
+
+  .pak {
+    font-size: 18px;
+  }
+
+  .explore {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+
+  .imager img {
+    height: 180px;
+  }
+
+  .hover-text {
+    font-size: 12px;
+    bottom: 5px;
+  }
+
+  .buttons button {
+    padding: 6px 15px;
+    font-size: 12px;
+    margin: 3px;
+  }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 320px) {
+  .line {
+    width: 25%;
+  }
+
+  .pak {
+    font-size: 16px;
+  }
+
+  .imager img {
+    height: 150px;
+  }
+
+  .buttons button {
+    padding: 5px 12px;
+    font-size: 11px;
+    margin: 2px;
+  }
+
+  .hover-text {
+    font-size: 11px;
+  }
+}
